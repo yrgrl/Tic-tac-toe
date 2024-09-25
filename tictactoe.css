@@ -1,0 +1,122 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .players {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .player {
+    flex: 1;
+    margin: 0 10px;
+    padding:10px;
+    width: 100px;
+  height: 50px;
+    background-color: #d8d08d;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .player h2 {
+    margin-top: 0;
+  }
+  .player__symbol {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .board-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #b98d13;
+    padding: 10px;
+    border: 1px solid #020202;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board__cell {
+    background-color: #090e3100;
+    border: 1px solid #000000;
+    padding: 20px;
+    font-size: 50px;
+    font-weight:bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 90px; 
+  height: 90px; 
+  }
+  
+  .board__cell:hover {
+    background-color: #f0cb54;
+  }
+  
+  .board__cell.winner {
+    background-color: #9b9b1e;
+    color: #333;
+  }
+  
+  .game-restart-btn {
+    background-color: #dd9d13;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .game-restart-btn:hover {
+    background-color: #889c89;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e9c707;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .popup.show {
+    display: block;
+  }
+  
+  .popup__message {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .popup__restart-btn {
+    background-color: #dd9d13;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup__restart-btn:hover {
+    background-color: #634824;
+  }
